@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Brent M. Cross">
+    <meta name="author" content="Brent M. Cross">
+    <title>WDD 131 - Dynamic Web Fundamentals - Brent M. Cross</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Brent M. Cross</h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/brent-cross/">LinkedIn</a>
+            <a href="https://byui.instructure.com/">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/32?lang=eng">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <section class="card about-me">
+                <h2>About Me</h2>
+                <div class="text-and-image">
+                    <p>My name is Brent Cross. I am from Nampa, Idaho. I work as a baker currently and am a full-time student. I love spending time with my family and learning new things. I also love to travel!</p>
+                    <img src="images/me.jpg" alt="Me">
+                </div>
+            </section>
+
+            <section class="card nampa-idaho">
+                <h2>Nampa, Idaho</h2>
+                <div class="text-and-image">
+                    <img src="images/Flag_of_Idaho.svg.jpg" alt="Nampa flag">
+                    <p>Nampa is one of the fastest growing cities in Idaho, where many people have come from Washington and California to live over the last few years.</p>
+                </div>
+            </section>
+        </div>
+
+        <aside class="resources">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://dev.to">Dev.to Community</a></li>
+                <li><a href="https://validator.w3.org/">Code Validator</a></li>
+                <li><a href="https://www.css-tricks.com">CSS Tricks</a></li>
+                <li><a href="https://byui-cse.github.io/wdd131-ww-course/">WDD131 Assingment Home</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Brent M. Cross, Nampa, ID</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
