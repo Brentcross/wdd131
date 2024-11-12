@@ -1,0 +1,19 @@
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#hamburger-button {
+    display: none;
+}
+
+main {
+    max-width: 1000px;
+}
+
+figure {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+}
