@@ -1,0 +1,13 @@
+.hero-overlay {
+    font-size: 2.5rem;
+    padding: 2rem;
+}
+
+.about-image {
+    max-width: 600px;
+}
+
+.weather {
+    padding: 2rem;
+    font-size: 1.2rem;
+}

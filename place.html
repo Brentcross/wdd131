@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Nampa, Idaho</title>
+    <meta name="description"
+        content="Learn about the vibrant city of Nampa, Idaho. Explore its attractions, weather, and history.">
+    <meta name="author" content="Brent M. Cross">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css" media="screen and (min-width: 600px)">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Nampa, Idaho</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Resources</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <picture>
+            <source srcset="images/lakelowell-large.webp" media="(min-width: 800px)">
+            <source srcset="images/lakelowell-small.webp" media="(max-width: 799px)">
+            <img src="images/lakelowell-small.webp" alt="View of Lake Lowell in Nampa, Idaho">
+        </picture>
+        <div class="hero-overlay">
+            <h2>Explore the Beauty of Lake Lowell</h2>
+        </div>
+    </section>
+
+
+    <main>
+        <section class="about">
+            <h2>About Nampa, Idaho</h2>
+            <picture>
+                <source srcset="images/downtown-large.webp" media="(min-width: 800px)">
+                <source srcset="images/downtown-small.webp" media="(max-width: 799px)">
+                <img src="images/downtown-small.webp" alt="Downtown Nampa, Idaho" class="about-image">
+            </picture>
+            <p>
+                Nampa is a small city in the Treasure Valley of Idaho. It is well known for its agricultural heritage,
+                beautiful landscapes, and a welcoming community.
+                Popular attractions include Lake Lowell, the Warhawk Air Museum, and the Nampa Farmers Market.
+            </p>
+        </section>
+
+        <section class="weather">
+            <h2>Weather <span class="weather-icon">⛅</span></h2>
+            <p>Temperature: <span id="temp">46°F</span></p>
+            <p>Wind Speed: <span id="wind-speed">6 mph</span></p>
+            <p>Wind Chill: <span id="wind-chill">N/A</span></p>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> - Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>
