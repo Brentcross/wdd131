@@ -84,10 +84,19 @@ main {
     margin-bottom: 1rem;
 }
 
-.weather-icon {
+.weather h2::after {
+    content: "⛅";
+    margin-left: 0.5rem;
     font-size: 1.5rem;
+}
+
+.weather-icon {
+    width: 24px;
+    height: 24px;
+    fill: #333;
     vertical-align: middle;
 }
+
 
 .weather p {
     margin: 0.5rem 0;

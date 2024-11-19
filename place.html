@@ -10,7 +10,9 @@
     <meta name="author" content="Brent M. Cross">
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css" media="screen and (min-width: 600px)">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">    
     <link href="https://wireframe.cc/eKEWer" rel="wireframe">
     <script src="scripts/place.js" defer></script>
 </head>
@@ -53,7 +55,7 @@
         </section>
 
         <section class="weather">
-            <h2>Weather <span class="weather-icon">⛅</span></h2>
+            <h2>Weather <svg class="weather-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="..." /></svg></h2>
             <p>Temperature: <span id="temp">46°F</span></p>
             <p>Wind Speed: <span id="wind-speed">6 mph</span></p>
             <p>Wind Chill: <span id="wind-chill">N/A</span></p>
