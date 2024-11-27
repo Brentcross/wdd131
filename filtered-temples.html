@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Photo Album</title>
+    <meta name="description" content="Explore our collection of temple photos in this beautiful photo album.">
+    <meta name="author" content="Brent M. Cross">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="screen and (min-width: 600px)">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Temple Photo Album</h1>
+        <button id="hamburger-button">☰</button>
+        <nav>
+            <ul>
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="old">Old</a></li>
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="large">Large</a></li>
+                <li><a href="#" id="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="templeCards"></div>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>
