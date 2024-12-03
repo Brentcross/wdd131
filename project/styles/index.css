@@ -1,0 +1,125 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f9f9;
+    color: #5d6d7e;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #f8c471;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #5d6d7e;
+}
+
+header h1 {
+    font-family: 'Lora', serif;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Navigation */
+nav {
+    background-color: #5d6d7e;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 10px 20px;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styles */
+main h2 {
+    font-family: 'Lora', serif;
+    font-size: 1.8rem;
+    color: #5d6d7e;
+    border-bottom: 2px solid #f8c471;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.1rem;
+}
+
+.features ul {
+    padding-left: 20px;
+    list-style: disc;
+}
+
+.features li {
+    margin-bottom: 10px;
+}
+
+
+.color-showcase {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.color-sample {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border: 2px solid #5d6d7e;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #5d6d7e;
+}
+
+.color-sample span {
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #5d6d7e;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+}
