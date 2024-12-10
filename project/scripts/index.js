@@ -4,15 +4,36 @@ const forumPosts = [
     { user: 'Morgan', message: 'Check out this picture of my sourdough starter!' }
 ];
 
-localStorage.setItem('forumPosts', JSON.stringify(forumPosts));
+if (!localStorage.getItem('forumPosts')) {
+    localStorage.setItem('forumPosts', JSON.stringify(forumPosts));
+}
 
 document.addEventListener('DOMContentLoaded', () => {
-    const forumPreview = document.querySelector('.forum-preview ul');
-    const storedPosts = JSON.parse(localStorage.getItem('forumPosts'));
+    const forumForm = document.getElementById('forum-form');
+    const forumPostsList = document.getElementById('forum-posts');
 
+    const storedPosts = JSON.parse(localStorage.getItem('forumPosts'));
     storedPosts.forEach(post => {
-        const li = document.createElement('li');
-        li.innerHTML = `<strong>${post.user}:</strong> "${post.message}"`;
-        forumPreview.appendChild(li);
+        addPostToDOM(post.user, post.message);
     });
+
+    forumForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const userName = document.getElementById('user-name').value;
+        const forumMessage = document.getElementById('forum-message').value;
+
+        addPostToDOM(userName, forumMessage);
+
+        const updatedPosts = [...storedPosts, { user: userName, message: forumMessage }];
+        localStorage.setItem('forumPosts', JSON.stringify(updatedPosts));
+
+        forumForm.reset();
+    });
+
+    function addPostToDOM(user, message) {
+        const li = document.createElement('li');
+        li.innerHTML = `<strong>${user}:</strong> ${message}`;
+        forumPostsList.appendChild(li);
+    }
 });

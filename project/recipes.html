@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes - Bakers Kneed Dough</title>
     <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/recipes.js" defer></script>
 </head>
 <body>
     <header>
@@ -19,6 +22,31 @@
     <main>
         <h2>Recipes</h2>
         <p>Discover and share recipes that inspire you to bake better!</p>
+
+        <section class="recipe-form">
+            <h3>Add Your Recipe</h3>
+            <form id="recipe-form">
+                <label for="recipe-title">Recipe Title:</label>
+                <input type="text" id="recipe-title" name="recipe-title" required>
+                
+                <label for="recipe-description">Description:</label>
+                <textarea id="recipe-description" name="recipe-description" rows="3" required></textarea>
+                
+                <label for="recipe-ingredients">Ingredients (comma-separated):</label>
+                <textarea id="recipe-ingredients" name="recipe-ingredients" rows="3" required></textarea>
+                
+                <label for="recipe-steps">Steps:</label>
+                <textarea id="recipe-steps" name="recipe-steps" rows="5" required></textarea>
+                
+                <button type="submit">Add Recipe</button>
+            </form>
+        </section>
+
+        <section class="recipe-list">
+            <h3>Your Recipes</h3>
+            <ul id="recipes">
+            </ul>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Bakers Kneed Dough</p>

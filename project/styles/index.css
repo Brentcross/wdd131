@@ -7,7 +7,6 @@ body {
     line-height: 1.6;
 }
 
-
 header {
     background-color: #f8c471;
     color: #fff;
@@ -25,7 +24,6 @@ header h1 {
 header p {
     font-size: 1.2rem;
 }
-
 
 nav {
     background-color: #5d6d7e;
@@ -54,7 +52,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-
 main {
     max-width: 800px;
     margin: 20px auto;
@@ -77,40 +74,32 @@ main h2 {
     font-size: 1.1rem;
 }
 
-.features ul {
-    padding-left: 20px;
-    list-style: disc;
-}
-
-.features li {
-    margin-bottom: 10px;
-}
-
-
-.color-showcase {
+.image-showcase {
     display: flex;
-    gap: 10px;
-    margin: 20px 0;
-    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+    justify-content: space-around;
 }
 
-.color-sample {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 80px;
-    height: 80px;
-    border: 2px solid #5d6d7e;
-    border-radius: 8px;
+.image-card {
     text-align: center;
-    font-size: 0.9rem;
-    color: #5d6d7e;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+    overflow: hidden;
 }
 
-.color-sample span {
-    font-size: 0.8rem;
-    margin-top: 5px;
+.image-card img {
+    width: 100%;
+    border-bottom: 2px solid #f8c471;
+    border-radius: 8px 8px 0 0;
+}
+
+.image-card p {
+    margin: 10px;
+    font-size: 1rem;
+    color: #5d6d7e;
 }
 
 footer {
@@ -119,4 +108,149 @@ footer {
     text-align: center;
     padding: 10px;
     font-size: 0.9rem;
+}
+
+.image-card img {
+    width: 100%; 
+    height: auto; 
+    max-height: 300px; 
+    object-fit: cover; 
+    border-bottom: 2px solid #f8c471;
+    border-radius: 8px 8px 0 0;
+}
+
+.recipe-form {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-form h3 {
+    font-family: 'Lora', serif;
+    font-size: 1.5rem;
+    color: #5d6d7e;
+}
+
+.recipe-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #5d6d7e;
+}
+
+.recipe-form input,
+.recipe-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.recipe-form button {
+    padding: 10px 15px;
+    background-color: #f8c471;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.recipe-form button:hover {
+    background-color: #f5b041;
+}
+
+.recipe-list {
+    margin: 20px 0;
+}
+
+.recipe-list h3 {
+    font-family: 'Lora', serif;
+    font-size: 1.5rem;
+    color: #5d6d7e;
+}
+
+.recipe-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.recipe-list li {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.forum-form {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.forum-form h3 {
+    font-family: 'Lora', serif;
+    font-size: 1.5rem;
+    color: #5d6d7e;
+}
+
+.forum-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #5d6d7e;
+}
+
+.forum-form input,
+.forum-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.forum-form button {
+    padding: 10px 15px;
+    background-color: #f8c471;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.forum-form button:hover {
+    background-color: #f5b041;
+}
+
+.forum-posts {
+    margin: 20px 0;
+}
+
+.forum-posts h3 {
+    font-family: 'Lora', serif;
+    font-size: 1.5rem;
+    color: #5d6d7e;
+}
+
+.forum-posts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.forum-posts li {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
